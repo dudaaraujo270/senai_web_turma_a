@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #cf8a8add; /* Cor de fundo azul claro */
+    width: 100%; /* Largura total da tela */
+    height: 500px; /* Altura fixa de 100 pixels */
+    padding-top: 15px;
+}
+
+nav {
+    background-color: black;
+    min-width: 1200px;
+    max-width: 1400px;
+    height: 125px;
+    margin: 0 auto 0 auto;
+}
+nav #logo{
+    margin: 23px;
+    float: left;
+}
+nav #logo img{
+    height: 75px;
+}
+nav ul li{
+    color:aliceblue;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    list-style: none;
+    width: 25%; 
+    text-align: center; 
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
