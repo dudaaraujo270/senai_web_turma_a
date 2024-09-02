@@ -1,47 +1,82 @@
-**Parallelo Arquitetura e Construção**
-Este projeto é um site web para a empresa Parallelo Arquitetura e Construção. O site tem como objetivo apresentar os serviços oferecidos pela empresa, incluindo trabalhos realizados, escaneamento, informações sobre a empresa, lançamentos e contatos.
+HTML: 
 
-**Estrutura do Projeto**
-O projeto inclui dois arquivos principais:
-index.html: Contém a estrutura HTML básica da página.
-css/style.css: Contém as regras de estilo CSS aplicadas aos elementos HTML.
-Arquivo HTML (index.html)
-O arquivo HTML define a estrutura da página, incluindo os seguintes elementos:
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Parallelo Arquitetura e Construção</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="logo">
+                    <img src="img_parallelo\logo-white.png">
+                </div>
+                    <ul>
+                        <li>
+                            Home
+                        </li>
+                        <li>
+                            Trabalhos
+                        </li>
+                        <li>
+                            Escaneamento
+                        </li>
+                        <li>
+                            Sobre
+                        </li>
+                        <li>
+                            Lançamentos
+                        </li>
+                        <li>
+                            Contatos
+                        </li>
+                    </ul>
+            </nav>
+        </header>
 
-Cabeçalho (<header>): Contém títulos de diferentes níveis (<h1> a <h6>) para demonstrar a hierarquia e o tamanho dos textos.
-Navegação (<nav>): Inclui uma lista não ordenada de itens de navegação.
-Seção (<section>): Espaço reservado para o conteúdo principal da página.
-Rodapé (<footer>): Área para informações adicionais ou direitos autorais.
-Arquivo CSS (style.css)
-O arquivo CSS aplica estilos aos elementos HTML para definir a aparência da página.
+    </body>
+</html>
 
 
-**Conceitos Aprendidos**
-Através da execução e análise dos códigos fornecidos, você pode ter aprendido os seguintes conceitos:
+CSS:
+body{
+    margin: 0;
+    padding: 0;
+}
 
-Estrutura Básica do HTML: Como criar a estrutura de uma página web usando tags HTML.
-Hierarquia de Cabeçalhos: O uso de tags de cabeçalho (<h1> a <h6>) para definir a hierarquia e o tamanho dos textos.
-Estilização com CSS: Aplicação de estilos aos elementos HTML para definir a aparência da página.
+header {
+    background-color: #cf8a8add; /* Cor de fundo azul claro */
+    width: 100%; /* Largura total da tela */
+    height: 500px; /* Altura fixa de 100 pixels */
+    padding-top: 15px;
+}
 
+nav {
+    background-color: black;
+    min-width: 1200px;
+    max-width: 1400px;
+    height: 125px;
+    margin: 0 auto 0 auto;
+}
+nav #logo{
+    margin: 23px;
+    float: left;
+}
+nav #logo img{
+    height: 75px;
+}
+nav ul li{
+    color:aliceblue;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    list-style: none;
+    width: 25%; 
+    text-align: center; 
+}
 
-**Estrutura desenvolvida**
-O projeto é composto pelos seguintes arquivos e diretórios:
-
-index.html: Página principal do site.
-css/style.css: Arquivo de estilos CSS para a formatação do site.
-img_parallelo/: Diretório contendo as imagens utilizadas no site, incluindo o logotipo.
-Funcionalidades
-Home: Página inicial com uma visão geral da empresa.
-Trabalhos: Seção que apresenta os projetos realizados pela empresa.
-Escaneamento: Informações sobre os serviços de escaneamento oferecidos.
-Sobre: Detalhes sobre a história e a missão da empresa.
-Lançamentos: Novidades e lançamentos recentes.
-Contatos: Informações de contato e formulário para envio de mensagens.
-
-
-**Tecnologias Utilizadas**
-HTML5: Estruturação do conteúdo do site.
-CSS3: Estilização e layout do site.
-
-Agradeço a todos os colegas e professores que contribuíram para o desenvolvimento deste projeto. Seu apoio e colaboração foram fundamentais para o aprendizado e crescimento de todos nós.
-
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
