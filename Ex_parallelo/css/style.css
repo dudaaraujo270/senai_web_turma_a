@@ -1,75 +1,102 @@
-body{
-    margin: 0;
-    padding: 0;
+/* Estilos aplicados ao elemento <body> */
+body {
+    margin: 0; /* Remove a margem padrão do corpo da página */
+    padding: 0; /* Remove o preenchimento (padding) padrão do corpo da página */
 }
 
+/* Estilos aplicados ao elemento <header> */
 header {
-    background-color:rgb(179, 176, 176); /* Cor de fundo azul claro */
-    width: 100%; /* Largura total da tela */
-    height: 500px; /* Altura fixa de 100 pixels */
-    padding-top: 15px;
+    background-image: url(../img_parallelo/project-1.jpg); /* Define uma imagem de fundo específica para o cabeçalho */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+    background-size: cover; /* Faz com que a imagem cubra todo o cabeçalho, mantendo suas proporções */
+    background-position: center; /* Centraliza a imagem de fundo no cabeçalho */
+    width: 100%; /* Define a largura do cabeçalho para ocupar 100% da tela */
+    height: 720px; /* Define uma altura fixa de 720 pixels para o cabeçalho */
+    padding-top: 15px; /* Adiciona um preenchimento de 15 pixels no topo do cabeçalho */
 }
 
+/* Estilos aplicados ao elemento <nav> */
 nav {
-    background-color: black;
-    min-width: 1200px;
-    max-width: 1400px;
-    height: 125px;
-    margin: 0 auto 0 auto;
-}
-nav #logo{
-    margin: 23px;
-    float: left;
-}
-nav #logo img{
-    height: 75px;
-}
-nav ul li{
-    color:aliceblue;
-    font-size: 16px;
-    font-family: Montserrat, sans-serif;
-    list-style: none;
+    background-color: black; /* Define a cor de fundo do menu de navegação como preto */
+    min-width: 1200px; /* Define a largura mínima do menu de navegação como 1200 pixels */
+    max-width: 1400px; /* Define a largura máxima do menu de navegação como 1400 pixels */
+    height: 125px; /* Define uma altura fixa de 125 pixels para o menu de navegação */
+    margin: 0 auto; /* Centraliza horizontalmente o menu de navegação na página */
 }
 
-nav ul{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
+/* Estilos aplicados ao logo dentro do <nav> */
+nav #logo {
+    margin: 23px; /* Adiciona uma margem de 23 pixels ao redor do logo */
+    float: left; /* Alinha o logo à esquerda dentro do menu de navegação */
 }
 
-nav ul li a{
-    padding: 55px 20px 55px 0;
-    float: left;
+/* Estilos aplicados à imagem dentro do logo */
+nav #logo img {
+    height: 75px; /* Define a altura da imagem do logo como 75 pixels */
 }
 
-nav #menu_principal{
-    float: right;
+/* Estilos aplicados aos itens da lista dentro do <nav> */
+nav ul li {
+    color: aliceblue; /* Define a cor do texto dos itens da lista como azul claro */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+    font-family: Montserrat, sans-serif; /* Define a fonte como Montserrat, com fallback para fontes sans-serif */
+    list-style: none; /* Remove a marcação padrão da lista (como bolinhas) */
 }
 
-#menu_principal li span{
-    font-family: Monserrat, sans-serif;
-    font-size: 11px;
-    color: rgb(134, 134, 134);
-    margin-top: 60px;
-    margin-right: 3px;
-    float: left;
-
-
+/* Estilos aplicados à lista de navegação dentro do <nav> */
+nav ul {
+    display: flex; /* Exibe os itens da lista em uma linha (layout flexível) */
+    flex-direction: row; /* Organiza os itens da lista em uma única linha horizontal */
+    margin: 0; /* Remove a margem padrão da lista */
+    padding: 0; /* Remove o preenchimento (padding) padrão da lista */
 }
 
-#menu_principal li a{
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
+/* Estilos aplicados aos links dentro dos itens da lista de navegação */
+nav ul li a {
+    padding: 55px 20px 55px 0; /* Adiciona preenchimento ao redor dos links (55px no topo e na base, 20px na direita) */
+    float: left; /* Alinha os links à esquerda dentro dos itens da lista */
 }
 
-nav ul li:hover{
-    background-color:rgb(179, 176, 176);
+/* Estilos aplicados ao menu principal (uma parte específica do <nav>) */
+nav #menu_principal {
+    float: right; /* Alinha o menu principal à direita dentro do menu de navegação */
 }
 
-/* ----------------- Início do estilo da página trabalhos --------------------- */
-#trabalhos{
-    background-color: rgb(168, 168, 168);
-    transition: 1s;
+/* Estilos aplicados ao span dentro dos itens do menu principal */
+#menu_principal li span {
+    font-family: Montserrat, sans-serif; /* Define a fonte como Montserrat, com fallback para fontes sans-serif */
+    font-size: 11px; /* Define o tamanho da fonte como 11 pixels */
+    color: rgb(134, 134, 134); /* Define a cor do texto como cinza */
+    margin-top: 60px; /* Adiciona uma margem superior de 60 pixels */
+    margin-right: 3px; /* Adiciona uma margem à direita de 3 pixels */
+    float: left; /* Alinha o span à esquerda dentro dos itens da lista */
+}
+
+/* Estilos aplicados aos links dentro do menu principal */
+#menu_principal li a {
+    color: white; /* Define a cor do texto dos links como branco */
+    font-size: 14px; /* Define o tamanho da fonte como 14 pixels */
+    text-transform: uppercase; /* Converte o texto para letras maiúsculas */
+    text-decoration: none; /* Remove a decoração do texto (como sublinhado) */
+    transition: 1s; /* Adiciona uma transição suave de 1 segundo para alterações no link */
+}
+
+/* Estilos aplicados aos links quando o cursor está sobre eles */
+#menu_principal li a:hover {
+    color: rgb(231, 169, 32); /* Muda a cor do texto para laranja quando o link é 'hovered' */
+    transition: 1s; /* Mantém a transição suave de 1 segundo */
+    text-decoration: line-through; /* Adiciona um risco no texto ao passar o mouse sobre o link */
+}
+section{
+    background-image: url(../img_parallelo/divider-dark.png);
+    width: 100%;
+    height: 500px;
+    background-repeat: repeat-x;
+}
+
+/* ----------------- Início do estilo da página "trabalhos" --------------------- */
+/* Estilos aplicados ao elemento com o id "trabalhos" */
+#trabalhos {
+    background-color: rgb(168, 168, 168); /* Define a cor de fundo da seção "trabalhos" como cinza */
+    transition: 1s; /* Adiciona uma transição suave de 1 segundo para alterações na seção */
 }
