@@ -6,7 +6,7 @@ body {
 
 /* Estilos aplicados ao elemento <header> */
 header {
-    background-image: url(../img_parallelo/project-1.jpg); /* Define uma imagem de fundo específica para o cabeçalho */
+    background-image: url(../img_parallelo/project-1.jpg); /* Define uma imagem de fundo para o cabeçalho */
     background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
     background-size: cover; /* Faz com que a imagem cubra todo o cabeçalho, mantendo suas proporções */
     background-position: center; /* Centraliza a imagem de fundo no cabeçalho */
@@ -87,82 +87,98 @@ nav #menu_principal {
     transition: 1s; /* Mantém a transição suave de 1 segundo */
     text-decoration: line-through; /* Adiciona um risco no texto ao passar o mouse sobre o link */
 }
-section{
-    background-image: url(../img_parallelo/divider-dark.png);
-    width: 100%;
-    height: 500px;
-    background-repeat: repeat-x;
-    padding-top: 100px;
-}
-.icons{
-    height: 120px;
-    width: 345px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
- }
- .icons .icon img{
-    width: 115px;
- }
-.txt{
-    height: 100px;
-    width: 100%;
-}
-.txt{
-    width: 850px;
-    margin: 0 auto;
-}
-.txt h6{
-    font-family: "Roboto Slab", serif; /** Carregar a fonte do Google Fontes*/
-    font-size: 28px;
-    font-weight: 300;
-    width: 80%;
-    display: inline-block;
-    line-height: 40px;
-    text-align: center;
-    margin: 0;
-    margin-left: 90px;
-    margin-top: 95px;
-}
-.nosso{
-    height: 30px;
-    width: 100%;
-}
-.nosso{
-    width: 160px;
-    margin: 0 auto;
+.regua {
+    background-image: url(../img_parallelo/divider-dark.png); /* Define uma imagem de fundo como uma régua/divisor */
+    background-repeat: repeat-x; /* Repete a imagem no eixo horizontal */
+    padding-top: 100px; /* Adiciona um espaçamento superior de 100 pixels */
 }
 
-.nosso h6{
-    font-weight: 300;
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    margin-top: 95px;
-    color: #e7a920;
-    text-transform: uppercase;
-    letter-spacing: 11px;
-}
-.projetos{
-    height: 800px;
-    width: 100%;
-    margin: -14 auto;
-    text-align: center;
-}
-.projetos{
-    width: 800px;
-    margin: 0 auto;
-}
-.projetos h1{
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 85px;
-    text-transform: uppercase;
-    color: #000;
-    margin: 0;
-    margin-top: 0;
+.icons {
+    height: 120px; /* Define a altura dos ícones como 120 pixels */
+    width: 345px; /* Define a largura total dos ícones como 345 pixels */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    display: flex; /* Usa Flexbox para alinhar os ícones em linha */
+    flex-direction: row; /* Define a direção dos itens em uma linha horizontal */
 }
 
+.icons .icon img {
+    width: 115px; /* Define a largura das imagens dos ícones como 115 pixels */
+}
+
+.txt {
+    height: 100px; /* Define a altura do texto como 100 pixels */
+    width: 100%; /* Define a largura como 100% do container pai */
+}
+
+.txt {
+    width: 850px; /* Define uma largura fixa de 850 pixels para o texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+}
+
+.txt h6 {
+    font-family: "Roboto Slab", serif; /* Define a fonte como Roboto Slab (precisa ser carregada do Google Fonts) */
+    font-size: 28px; /* Define o tamanho da fonte como 28 pixels */
+    font-weight: 300; /* Define o peso da fonte como 300 (leve) */
+    width: 80%; /* Define a largura do h6 como 80% */
+    display: inline-block; /* Faz com que o elemento se comporte como inline, mas permite largura e altura */
+    line-height: 40px; /* Define a altura da linha como 40 pixels */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 0; /* Remove as margens padrão */
+    margin-left: 95px; /* Adiciona 95 pixels de margem à esquerda */
+    margin-top: 40px; /* Adiciona 40 pixels de margem ao topo */
+}
+
+.trabalhos {
+    margin-top: 110px; /* Adiciona uma margem superior de 110 pixels */
+}
+
+.cabecalho {
+    min-width: 1200px; /* Define a largura mínima como 1200 pixels para o menu de navegação */
+    max-width: 1400px; /* Define a largura máxima como 1400 pixels para o menu de navegação */
+    margin: 0 auto; /* Centraliza o cabeçalho horizontalmente */
+    text-align: center; /* Alinha o texto no centro */
+}
+
+.trabalhos .cabecalho h4 span {
+    color: #e7a920; /* Define a cor do texto como amarelo (#e7a920) */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 11px; /* Define o espaçamento entre letras como 11 pixels */
+    font-weight: 300; /* Define o peso da fonte como 300 (leve) */
+    font-size: 24px; /* Define o tamanho da fonte como 24 pixels */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte como Montserrat */
+}
+
+.trabalhos .cabecalho h4 b {
+    font-weight: 700; /* Define o peso da fonte como 700 (negrito) */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte como Montserrat */
+    font-size: 85px; /* Define o tamanho da fonte como 85 pixels */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    color: #000; /* Define a cor do texto como preto */
+}
+
+.trabalhos .cabecalho p {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte como Montserrat */
+    font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+    color: #000; /* Define a cor do texto como preto */
+}
+
+.trabalhos .mosaico{
+    min-width: 1200px; /* Define a largura mínima do menu de navegação como 1200 pixels */
+    max-width: 1400px; /* Define a largura máxima do menu de navegação como 1400 pixels */
+    margin: 0 auto;
+}
+.trabalhos .mosaico .item{
+    height: 470px; /* Define a altura do elemento como 470 pixels */
+    width: 570px;  /* Define a largura do elemento como 570 pixels */
+    background-image: url(../img_parallelo/project-1.jpg); /* Define a imagem de fundo para o elemento, utilizando o caminho relativo fornecido */
+    background-size: contain; /* Ajusta o tamanho da imagem de fundo para que ela se encaixe dentro do elemento, mantendo sua proporção. A imagem será redimensionada se for maior ou menor que o elemento. */
+    background-position: center; /* Garante que a imagem de fundo não se repita dentro do elemento */
+}
+
+.trabalhos .mosaico .item:hover{
+    background-size: 110%;
+    background-position: center;
+}
 
 /* ----------------- Início do estilo da página "trabalhos" --------------------- */
 /* Estilos aplicados ao elemento com o id "trabalhos" */
