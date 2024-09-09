@@ -92,7 +92,77 @@ section{
     width: 100%;
     height: 500px;
     background-repeat: repeat-x;
+    padding-top: 100px;
 }
+.icons{
+    height: 120px;
+    width: 345px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+ }
+ .icons .icon img{
+    width: 115px;
+ }
+.txt{
+    height: 100px;
+    width: 100%;
+}
+.txt{
+    width: 850px;
+    margin: 0 auto;
+}
+.txt h6{
+    font-family: "Roboto Slab", serif; /** Carregar a fonte do Google Fontes*/
+    font-size: 28px;
+    font-weight: 300;
+    width: 80%;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+    margin-left: 90px;
+    margin-top: 95px;
+}
+.nosso{
+    height: 30px;
+    width: 100%;
+}
+.nosso{
+    width: 160px;
+    margin: 0 auto;
+}
+
+.nosso h6{
+    font-weight: 300;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-top: 95px;
+    color: #e7a920;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+}
+.projetos{
+    height: 800px;
+    width: 100%;
+    margin: -14 auto;
+    text-align: center;
+}
+.projetos{
+    width: 800px;
+    margin: 0 auto;
+}
+.projetos h1{
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 85px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+    margin-top: 0;
+}
+
 
 /* ----------------- Início do estilo da página "trabalhos" --------------------- */
 /* Estilos aplicados ao elemento com o id "trabalhos" */
