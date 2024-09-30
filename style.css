@@ -1,0 +1,85 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #a7c3dd, #647bbe, #211f6b);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 460px;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    margin: 0 auto;
+    background-color: rgba(240, 248, 255, 0.062);
+
+}
+
+
+    
+    /* max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+
+
+h1 {
+    color: #ffffff; /* Verde */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 95px; /* Espaçamento abaixo do título */
+}
+
+h2 {
+    color: #ffffff; /* Verde */
+    text-align: center; /* Centraliza o título */
+    margin-top: 95px; /* Espaçamento abaixo do título */
+} 
+
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    color: #ffffff;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffffff;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+
+/* http://localhost:8080/aulaphp_avaliacao/index.php */
+
